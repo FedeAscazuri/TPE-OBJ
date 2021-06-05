@@ -9,6 +9,7 @@ public class Cocina {
     private List<EstacionDeTrabajo> estaciones = new ArrayList<EstacionDeTrabajo>();
     private EstacionDeTrabajo estacionDefecto;
     private List<CriterioCobro> cobros = new ArrayList<CriterioCobro>();
+    private List<Pedido> pedidosDelegados= new ArrayList<Pedido>();
 
 
     public Cocina(EstacionDeTrabajo estacionDefecto) {
@@ -40,6 +41,16 @@ public class Cocina {
                 estacionDefecto.agregarComida(pcomida);
         }
         pedidosDelegados.add(pedido);
+    }
+    public double cobroMesa(int mesa) {
+        double retorno=0;
+        for (Pedido pPedido: pedidosDelegados){
+            if (pPedido.getNumeroMesa()==mesa) {
+                for(CriterioCobro pCriterio: cobros)
+                    retorno += pPedido.costoTotal(pCriterio);
+            }
+        }
+        return retorno;
     }
 
 }

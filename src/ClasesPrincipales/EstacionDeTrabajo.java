@@ -45,4 +45,14 @@ public class EstacionDeTrabajo {
     public int getNumeroEstacion() {
         return numeroEstacion;
     }
+
+
+    @Override
+    public String toString() {
+        return "EstacionDeTrabajo{" +
+                "numeroEstacion=" + numeroEstacion +
+                ", condiciones=" + condiciones +
+                ", comidasPreparandose=" + comidasPreparandose +
+                '}';
+    }
 }

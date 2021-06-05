@@ -12,6 +12,7 @@ public class ComidaCompleja extends Comida {
     }
 
     public void agregarComida(Comida comida){
+        comida.setNumeroPedido(this.getNumeroPedido());
         comidas.add(comida);
     }
 

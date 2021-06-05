@@ -1,5 +1,6 @@
 package ClasesPrincipales;
 
+import CondicionesCobro.*;
 import CondicionesEspecialidad.*;
 
 public class Palacio {

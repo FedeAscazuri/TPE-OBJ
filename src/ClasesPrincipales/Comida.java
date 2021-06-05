@@ -4,7 +4,7 @@ package ClasesPrincipales;
 public abstract class Comida {
     private String nombre;
     private String tipo;
-    private String preparaicon;
+    private String preparacion;
     private int numeroPedido;
 
     public Comida(String nombre, String tipo, String preparaicon) {
@@ -30,12 +30,12 @@ public abstract class Comida {
         this.tipo = tipo;
     }
 
-    public String getPreparaicon() {
-        return preparaicon;
+    public String getPreparacion() {
+        return preparacion;
     }
 
-    public void setPreparaicon(String preparaicon) {
-        this.preparaicon = preparaicon;
+    public void setPreparacion(String preparaicon) {
+        this.preparacion = preparacion;
     }
 
     public int getNumeroPedido() {

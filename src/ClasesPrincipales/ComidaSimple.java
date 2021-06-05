@@ -6,8 +6,8 @@ public class ComidaSimple extends Comida {
     protected double precio;
     protected int tiempoPreparacion;
 
-    public ComidaSimple(String nombre, String tipo, String preparaicon, int numeroPedido, double calorias, double precio, int tiempoPreparacion) {
-        super(nombre, tipo,preparaicon, numeroPedido);
+    public ComidaSimple(String nombre, String tipo, String preparacion,double calorias, double precio, int tiempoPreparacion) {
+        super(nombre, tipo,preparacion);
         this.tiempoPreparacion = tiempoPreparacion;
         this.calorias= calorias;
         this.precio= precio;
