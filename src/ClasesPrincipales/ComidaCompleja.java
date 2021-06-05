@@ -7,8 +7,8 @@ public class ComidaCompleja extends Comida {
 
     private List<Comida> comidas = new ArrayList<Comida>();
 
-    public ComidaCompleja(String nombre, String tipo, String preparaicon, int numeroPedido) {
-        super(nombre, tipo, preparaicon, numeroPedido);
+    public ComidaCompleja(String nombre, String tipo, String preparacion) {
+        super(nombre, tipo, preparacion);
     }
 
     public void agregarComida(Comida comida){
@@ -40,5 +40,15 @@ public class ComidaCompleja extends Comida {
             retorno+=pComida.getPrecio();
         }
         return retorno;
+    }
+
+    @Override
+    public String toString() {
+        return "ComidaCompleja{" +super.toString() + '\'' +
+                " - Calorias: " + getCalorias() + '\'' +
+                " - Precio: " + getPrecio() + '\'' +
+                " - Tiempo Preparacion: " + getTiempoPreparacion() + '\'' +
+                " comidas= " + comidas + '\'' +
+                '}';
     }
 }

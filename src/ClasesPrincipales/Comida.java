@@ -7,12 +7,11 @@ public abstract class Comida {
     private String preparaicon;
     private int numeroPedido;
 
-    public Comida(String nombre, String tipo, String preparaicon, int numeroPedido) {
+    public Comida(String nombre, String tipo, String preparaicon) {
 
         this.nombre = nombre;
         this.tipo = tipo;
-        this.preparaicon = preparaicon;
-        this.numeroPedido = numeroPedido;
+        this.preparacion = preparaicon;
     }
 
     public String getNombre() {
@@ -51,4 +50,13 @@ public abstract class Comida {
     public abstract double getCalorias();
     public abstract double getPrecio();
 
+    @Override
+    public String toString() {
+        return "Comida{" +
+                "nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", preparacion='" + preparacion + '\'' +
+                ", numeroPedido=" + numeroPedido +
+                '}';
+    }
 }

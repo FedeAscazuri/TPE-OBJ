@@ -39,6 +39,7 @@ public class Cocina {
             if (!defecto)
                 estacionDefecto.agregarComida(pcomida);
         }
+        pedidosDelegados.add(pedido);
     }
 
 }

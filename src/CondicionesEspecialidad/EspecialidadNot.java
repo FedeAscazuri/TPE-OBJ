@@ -5,6 +5,7 @@ import ClasesPrincipales.EstacionDeTrabajo;
 
 public class EspecialidadNot implements Especialidad{
     private Especialidad e1;
+
     public EspecialidadNot(Especialidad e1){
         this.e1= e1;
     }

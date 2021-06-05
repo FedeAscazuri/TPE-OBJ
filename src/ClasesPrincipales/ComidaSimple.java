@@ -28,4 +28,13 @@ public class ComidaSimple extends Comida {
     public double getPrecio() {
         return this.precio;
     }
+
+    @Override
+    public String toString() {
+        return "ComidaSimple{" + super.toString() +
+                "calorias=" + calorias +
+                ", precio=" + precio +
+                ", tiempoPreparacion=" + tiempoPreparacion +
+                '}';
+    }
 }

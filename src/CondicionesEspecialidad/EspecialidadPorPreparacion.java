@@ -5,6 +5,10 @@ import ClasesPrincipales.Comida;
 public class EspecialidadPorPreparacion implements Especialidad {
     private String preparacion;
 
+    public EspecialidadPorPreparacion(String preparacion) {
+        this.preparacion = preparacion;
+    }
+
     public String getPreparacion()
     {
         return preparacion;
