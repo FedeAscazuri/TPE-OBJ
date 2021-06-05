@@ -1,0 +1,56 @@
+package ClasesPrincipales;
+
+import CondicionesCobro.CriterioCobro;
+import com.sun.source.tree.ArrayAccessTree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pedido {
+    protected List<Comida> comidasPedidas = new ArrayList<Comida>();
+    protected int numeroMesa;
+    private String mozo;
+
+    public Pedido(int numeroMesa, String mozo) {
+        this.numeroMesa = numeroMesa;
+        this.mozo = mozo;
+    }
+
+    public int getNumeroMesa() {
+        return this.numeroMesa;
+    }
+
+    public void setNumeroMesa(int numeroMesa) {
+        this.numeroMesa = numeroMesa;
+    }
+
+    public String getMozo() {
+        return this.mozo;
+    }
+
+    public void setMozo(String mozo) {
+        this.mozo = mozo;
+    }
+
+    public void agregarComida(Comida comida) {
+        comida.setNumeroPedido(this.getNumeroMesa());
+        comidasPedidas.add(comida);
+    }
+
+    public double costoTotal(CriterioCobro c){
+        double retorno=0;
+        for (Comida pComidas:comidasPedidas) {
+            retorno+= c.costoAdicional(pComidas);
+        }
+        return retorno;
+    }
+    public List<Comida> getComidasPedidas(){
+        List<Comida> retorno= new ArrayList<Comida>();
+        for (Comida pComida: comidasPedidas){
+            retorno.add(pComida);
+        }
+        return retorno;
+    }
+
+}
+

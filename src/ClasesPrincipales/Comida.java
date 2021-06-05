@@ -1,0 +1,57 @@
+package ClasesPrincipales;
+
+
+import java.sql.Time;
+import java.time.Duration;
+
+public abstract class Comida {
+    private String nombre;
+    private String tipo;
+    private String preparaicon;
+    private int numeroPedido;
+
+    public Comida(String nombre, String tipo, String preparaicon, int numeroPedido) {
+
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.preparaicon = preparaicon;
+        this.numeroPedido = numeroPedido;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getPreparaicon() {
+        return preparaicon;
+    }
+
+    public void setPreparaicon(String preparaicon) {
+        this.preparaicon = preparaicon;
+    }
+
+    public int getNumeroPedido() {
+        return numeroPedido;
+    }
+
+    public void setNumeroPedido(int numeroPedido) {
+        this.numeroPedido = numeroPedido;
+    }
+
+    public abstract int getTiempoPreparacion();
+    public abstract double getCalorias();
+    public abstract double getPrecio();
+
+}
