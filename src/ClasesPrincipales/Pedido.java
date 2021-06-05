@@ -1,7 +1,6 @@
 package ClasesPrincipales;
 
 import CondicionesCobro.CriterioCobro;
-import com.sun.source.tree.ArrayAccessTree;
 
 import java.util.ArrayList;
 import java.util.List;

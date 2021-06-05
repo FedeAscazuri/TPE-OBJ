@@ -1,9 +1,6 @@
 package ClasesPrincipales;
 
 
-import java.time.Duration;
-
-
 public class ComidaSimple extends Comida {
     protected double calorias;
     protected double precio;

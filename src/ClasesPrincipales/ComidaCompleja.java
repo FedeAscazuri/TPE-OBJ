@@ -41,6 +41,4 @@ public class ComidaCompleja extends Comida {
         }
         return retorno;
     }
-
-
 }

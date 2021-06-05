@@ -1,7 +1,6 @@
 package ClasesPrincipales;
 
-import CondicionesCobro.CriterioCobro;
-import CondicionesEspecialidad.Especialidad;
+import CondicionesEspecialidad.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ public class EstacionDeTrabajo {
         this.numeroEstacion=numeroEstacion;
     }
 
-    public void agregarCondicion(Especialidad c){
+    public void agregarEspecialidad(Especialidad c){
         if (!condiciones.contains(c))
             condiciones.add(c);
     }

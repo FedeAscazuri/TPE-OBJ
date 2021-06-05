@@ -1,9 +1,6 @@
 package ClasesPrincipales;
 
 
-import java.sql.Time;
-import java.time.Duration;
-
 public abstract class Comida {
     private String nombre;
     private String tipo;
