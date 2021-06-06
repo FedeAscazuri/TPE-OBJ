@@ -45,11 +45,11 @@ public class ComidaCompleja extends Comida {
 
     @Override
     public String toString() {
-        return "ComidaCompleja{" +super.toString() + '\'' +
+        return "\n"+"ComidaCompleja{" +super.toString() + '\'' +
                 " - Calorias: " + getCalorias() + '\'' +
                 " - Precio: " + getPrecio() + '\'' +
                 " - Tiempo Preparacion: " + getTiempoPreparacion() + '\'' +
                 " comidas= " + comidas + '\'' +
-                '}';
+                '}'+ "\n";
     }
 }

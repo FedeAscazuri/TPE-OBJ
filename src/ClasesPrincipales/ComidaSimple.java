@@ -31,10 +31,10 @@ public class ComidaSimple extends Comida {
 
     @Override
     public String toString() {
-        return "ComidaSimple{" + super.toString() +
+        return "\n"+"ComidaSimple{" + super.toString() +
                 "calorias=" + calorias +
                 ", precio=" + precio +
                 ", tiempoPreparacion=" + tiempoPreparacion +
-                '}';
+                '}'+ "\n";
     }
 }

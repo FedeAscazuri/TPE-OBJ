@@ -24,7 +24,7 @@ public class Palacio {
         //Criterios de Cobro
         CriterioCobro c1= new CostoFijo(100,200,e1);
         CriterioCobro c2= new CostoFijo(200, 300, e4);
-        CriterioCobro c3= new Descuento(200, "Miercoles", "Miercoles");
+        CriterioCobro c3= new Descuento(20, "Miercoles", "Miercoles");
         CriterioCobro c4= new CostoPropina(15);
         CriterioCobro c5= new CostoSumado(c1, c4);
 
@@ -79,7 +79,7 @@ public class Palacio {
 
         //Impresiones por pantalla
         System.out.print("Cobro de todos los pedidos de la mesa '1': ");
-        System.out.println("$ "+cocinaDuahu.cobroMesa(1));
+        System.out.println("$ " + cocinaDuahu.cobroMesa(1));
         System.out.println("");
 
 

@@ -60,5 +60,13 @@ public class Pedido {
         return retorno;
     }
 
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "comidasPedidas=" + comidasPedidas +
+                ", numeroMesa=" + numeroMesa +
+                ", mozo='" + mozo + '\'' +
+                '}';
+    }
 }
 
