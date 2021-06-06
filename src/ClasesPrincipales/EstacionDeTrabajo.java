@@ -14,9 +14,11 @@ public class EstacionDeTrabajo {
         this.numeroEstacion=numeroEstacion;
     }
 
-    public void agregarEspecialidad(Especialidad c){
-        if (!condiciones.contains(c))
+    public boolean agregarEspecialidad(Especialidad c){
+        if (!condiciones.contains(c)){
             condiciones.add(c);
+            return true;}
+        return false;
     }
 
     public void agregarComida(Comida c){
