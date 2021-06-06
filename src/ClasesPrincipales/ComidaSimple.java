@@ -2,9 +2,9 @@ package ClasesPrincipales;
 
 
 public class ComidaSimple extends Comida {
-    protected double calorias;
-    protected double precio;
-    protected int tiempoPreparacion;
+    private double calorias;
+    private double precio;
+    private int tiempoPreparacion;
 
     public ComidaSimple(String nombre, String tipo, String preparacion,double calorias, double precio, int tiempoPreparacion) {
         super(nombre, tipo,preparacion);

@@ -31,6 +31,7 @@ public class CostoFijo implements CriterioCobro{
             return v1;
         return v2;
     }
+
     @Override
     public boolean equals(Object obj) {
         try {

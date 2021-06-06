@@ -20,8 +20,12 @@ public class Cocina {
         estaciones.add(estacion);
     }
 
-    public void agregarCobros(CriterioCobro c) {
-        cobros.add(c);
+    public boolean agregarCobros(CriterioCobro c) {
+        if (!cobros.contains(c)) {
+            cobros.add(c);
+            return true;
+        }
+        return false;
     }
 
     public void delegarPedido(Pedido pedido) {

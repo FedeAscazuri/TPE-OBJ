@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pedido {
-    protected List<Comida> comidasPedidas = new ArrayList<Comida>();
-    protected int numeroMesa;
+    private List<Comida> comidasPedidas = new ArrayList<Comida>();
+    private int numeroMesa;
     private String mozo;
 
     public Pedido(int numeroMesa, String mozo) {
