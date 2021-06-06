@@ -36,7 +36,15 @@ public class Pedido {
         comidasPedidas.add(comida);
     }
 
-    public double costoTotal(CriterioCobro c){
+    public double costoBase(){
+        double retorno=0;
+        for (Comida pComidas:comidasPedidas) {
+            retorno+= pComidas.getPrecio();
+        }
+        return retorno;
+    }
+
+    public double costoExtra(CriterioCobro c){
         double retorno=0;
         for (Comida pComidas:comidasPedidas) {
             retorno+= c.costoAdicional(pComidas);

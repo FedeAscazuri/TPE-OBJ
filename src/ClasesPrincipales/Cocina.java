@@ -49,7 +49,7 @@ public class Cocina {
             if (pPedido.getNumeroMesa()==mesa) {
                 retorno+= pPedido.costoBase();
                 for(CriterioCobro pCriterio: cobros)
-                    retorno += pPedido.costoTotal(pCriterio);
+                    retorno += pPedido.costoExtra(pCriterio);
             }
         }
         return retorno;
