@@ -62,8 +62,7 @@ public class Palacio {
         comidaCompleja1.agregarComida(comida1);
         comidaCompleja1.agregarComida(comida2);
 
-        //Agregacion de comidas a compleja2
-       // comidaCompleja2.agregarComida(comidaCompleja1);
+        //Agregacion de comidas a compleja
         comidaCompleja2.agregarComida(comida3);
         comidaCompleja2.agregarComida(comida4);
 
