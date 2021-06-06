@@ -16,4 +16,23 @@ public class CostoSumado implements CriterioCobro {
     public double costoAdicional(Comida comida) {
         return (c1.costoAdicional(comida) + c2.costoAdicional(comida));
     }
+
+    public CriterioCobro getC1() {
+        return c1;
+    }
+
+    public CriterioCobro getC2() {
+        return c2;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        try {
+            CostoSumado e= (CostoSumado) obj;
+            return (this.getC1().equals(e.getC1()) && this.getC2().equals(e.getC2()));
+
+        }catch (Exception e){
+            return false;
+        }
+    }
 }
