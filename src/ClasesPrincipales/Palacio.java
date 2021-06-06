@@ -63,7 +63,7 @@ public class Palacio {
         comidaCompleja1.agregarComida(comida2);
 
         //Agregacion de comidas a compleja2
-        comidaCompleja2.agregarComida(comidaCompleja1);
+       // comidaCompleja2.agregarComida(comidaCompleja1);
         comidaCompleja2.agregarComida(comida3);
         comidaCompleja2.agregarComida(comida4);
 
@@ -81,7 +81,8 @@ public class Palacio {
         System.out.print("Cobro de todos los pedidos de la mesa '1': ");
         System.out.println("$ " + cocinaDuahu.cobroMesa(1));
         System.out.println("");
-
+        System.out.print("Comidas del pedido '1': ");
+        System.out.println(pedido1);
 
     }
 }
