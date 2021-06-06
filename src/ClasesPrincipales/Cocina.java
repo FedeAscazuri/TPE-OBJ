@@ -42,10 +42,12 @@ public class Cocina {
         }
         pedidosDelegados.add(pedido);
     }
+
     public double cobroMesa(int mesa) {
         double retorno=0;
         for (Pedido pPedido: pedidosDelegados){
             if (pPedido.getNumeroMesa()==mesa) {
+                retorno+= pPedido.costoBase();
                 for(CriterioCobro pCriterio: cobros)
                     retorno += pPedido.costoTotal(pCriterio);
             }

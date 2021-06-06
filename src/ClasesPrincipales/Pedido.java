@@ -43,6 +43,7 @@ public class Pedido {
         }
         return retorno;
     }
+
     public List<Comida> getComidasPedidas(){
         List<Comida> retorno= new ArrayList<Comida>();
         for (Comida pComida: comidasPedidas){

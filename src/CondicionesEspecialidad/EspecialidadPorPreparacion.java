@@ -16,7 +16,7 @@ public class EspecialidadPorPreparacion implements Especialidad {
 
     @Override
     public boolean aceptaPedido(Comida comida) {
-        return comida.getPreparaicon().equals(preparacion);
+        return comida.getPreparacion().equals(preparacion);
     }
 
     @Override
